@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // books.db ile kaydettiğim kitaplardan veri alma
     async function kitapAra(query) {
-        const apiURL = `http://localhost:5000/api/books?search=${encodeURIComponent(query)}`;
+        const apiURL = `/api/books?search=${encodeURIComponent(query)}`;
         try {
             const response = await fetch(apiURL);
             const kitaplar = await response.json();
