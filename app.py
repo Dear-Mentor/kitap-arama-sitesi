@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import sqlite3
 
 app = Flask(__name__)
@@ -23,6 +23,10 @@ def search_books(query):
     conn.close()
     # Sonucu JSON'a uygun hale getir
     return [dict(row) for row in rows]
+
+@app.route('/')
+def home():
+    return render_template("index.html")
 
 @app.route('/api/books')
 def get_books():
