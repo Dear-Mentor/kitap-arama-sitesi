@@ -1,0 +1,450 @@
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+header nav ul li a{
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover{
+    background-color: var(--hover-arka-plan);
+    color: var(--hover-metin);
+
+}
+
+#navbar{
+    width: 100%;
+    color:var(--yazi-rengi) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.75rem;
+    height: 70px;
+    font-size: 20px;
+    
+}
+
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#navbar ul li a{
+    padding: 1rem;
+    color: var(--yazi-rengi);
+    
+}
+
+#navbar ul li a:hover{
+    color:var(--ana-renk);
+    border-radius: 4px;
+}
+
+
+/* Anasayfa Kısmı */
+
+#anasayfa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1px solid grey;
+}
+
+
+/* arama kısmı */
+
+.arama-alani {
+    background-image: url('../static/images/book-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0;
+    text-align: center;
+    filter: brightness(1.05);
+    
+}
+.arama-formu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+#slogan{
+    position:absolute;
+    top: 30%;
+    font-size: 35px;
+    color: var(--baslık-rengi);
+}
+
+.input-icon {
+    position: relative;         /* Önemli! */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;         /* Genişliği içeriğe göre ayarla, istersen sil de olur */
+    margin: 0 auto;
+}   
+#search{
+    min-width: 400px;
+    width: 500px;
+    height: 70px;
+    background-color: white;
+    border: 2px solid var(--cerceve-rengi);
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 10px 56px 10px 16px; /* Sağdan ekstra padding! */
+    box-sizing: border-box;
+}
+#search:focus {
+    border: 1px solid var(--yazi-rengi);
+    background-color: #e0e7ff;
+}
+
+
+.icon-btn{
+    position: absolute;         /* Absolute ile inputun içinde sağda */
+    right: 18px;                /* inputun sağına yasla */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon-btn #search-icon {
+    font-size: 30px;
+    color: var(--baslık-rengi);
+}
+
+
+form.arama-formu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 3rem;
+}
+
+
+
+
+
+/* Kitap Sonuçları Listeleme*/
+
+.kitap-listesi{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) ; /* 5 sütun olacak */
+    margin: 2rem 0;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 0 2vw;  /* Yandan boşluk ekle */
+    justify-content: center; /* Grid’i ortala */
+    gap: 2rem; /* Kartlar arası boşluk */
+}
+
+.kitap-karti{
+    background: var(--cerceve-rengi);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(35,108,131,0.07);
+    padding: 1.6rem;
+    width: 220px;
+    position:relative;
+    max-width: 100%;
+    min-height: 290px;      /* Kartlar kısa kalmasın diye */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+
+.kitap-karti:hover{
+    box-shadow: 0 8px 28px rgba(35,108,131,0.18);
+}
+
+.kitap-kapak{
+    width: 130px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
+
+/* Modal için detay */
+
+.modal-icerik{
+    background: var(--ana-arkaplan);
+    border-radius: 18px;
+    max-width: 640px;
+    width: 90vw;
+    max-width: 90vh;
+    padding: 0;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+    position: relative;
+    animation: fadeIn .3s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+@keyframes fadeIn{
+    from {transform: scale(0.9); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+#modal-detay{
+    background: var(--kart-arka-plan);
+    border-radius: 16px;
+    width: 92%;
+    min-width: 290px;
+    max-width: 94%;
+    max-height: 82vh;            /* İçerik yüksekliği modal'a göre */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    box-shadow: none;
+    margin: 38px auto 32px auto;
+    padding: 38px 28px 32px 28px; /* Sağdan biraz padding */
+}
+
+.modal-kapat{
+    position: absolute;
+    right: 22px;
+    top: 20px;
+    font-size: 2rem;
+    color: var(--ana-renk);
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    transition: color 0.2s;
+}
+
+.modal-kapat:hover{
+    color: var(--baslık-rengi);
+}
+
+.kitap-karti p, .kitap-karti h3 {
+    max-height: 5em;   /* 2 satırdan fazla gösterme */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Bölümü*/
+
+footer{
+    background-color: var(--ana-renk);
+    color: white;
+    padding: 2rem 5rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.contact-form{
+    background: #fff;
+    border-radius: 16px;
+    max-width: 400px;
+    min-width: 320px;
+    width: 100%;
+    margin: 1em auto;
+    padding: 0.5em 1.2em 1.2em 1.2em;
+    box-shadow: 0 2px 16px #0001;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+.contact-form h3,
+.contact-form h2{
+    margin-top: 0.3em !important;   
+    margin-bottom: 0.5em !important;   
+    font-size: 1.45em;
+    font-weight: bold;
+    color: var(--baslık-rengi, #225d6b);
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.7rem;
+    
+}
+.form-group label {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--baslık-rengi);
+    letter-spacing: 0.02rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.6em;
+    border-radius: 6px;
+    border: 1px solid #b0bec5;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 0.2em;
+    background: var(#fff);
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    background:var(--cerceve-rengi);
+    border: 1px solid var(--yazi-rengi);
+}
+
+#gonder-btn, .btn {
+    background: #297e94;
+    color: #fff;
+    padding: 0.8em 0;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 0.6em;
+    transition: background 0.2s;
+}
+#gonder-btn:hover {
+    background: #225d6b;
+}
+
+
+
+.sosyal-medya{
+    min-width: 290px;
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;      
+    gap: 10px;
+
+} 
+.sm-baslik{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    padding: 0;
+    display: block;
+
+}
+.sosyal-medya ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sosyal-medya ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    padding: 13px;
+    padding-left: 20px;
+    border-radius: 7px;
+    margin-top: 3px;
+    justify-content: center;
+}
+
+footer a i {
+    margin-right: 9px;
+    font-size: 1.5em;
+    width: 2.1rem;
+}
+
+
+
+.facebook {
+    background: #4267B2;
+    color: white
+}
+.facebook:hover {
+    background: white;
+    color: #4267B2;
+    border: 2px solid #4267B2;
+}
+
+.twitter{
+    background: #1da1f2;
+    color: white;
+}
+
+.twitter:hover {
+    background: white;
+    color: #1da1f2;
+    border: 2px solid #1da1f2;
+}
+
+.instagram{
+    background: #e1306c;
+    color: white;
+}
+.instagram:hover {
+    background: white;
+    color: #e1306c;
+    border: 2px solid #e1306c;
+}
+
+.linkedin{
+    background:  #0A66C2;
+    color: white;
+}
+.linkedin:hover{
+    background: white;
+    color: #0A66C2;
+    border: 2px solid #0A66C2;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1rem;
+  color: #e8f8f6;
+}

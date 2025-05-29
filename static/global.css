@@ -1,0 +1,115 @@
+/* Fonts*/
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* renkler */
+:root {
+  --ana-arkaplan: #f4fdfa;
+  --ana-renk: #236c83;
+  --ikincil-renk: #7be3b5;
+  --uyari-rengi: #ff7b72;
+  --baslık-rengi: #19304a;
+  --yazi-rengi: #444b59;
+
+  --hover-arka-plan: #dff7ef;
+  --hover-metin: #174f61;
+  --cerceve-rengi: #f8fefc;
+  --kart-arka-plan: #cde0e6;
+  --kart-golge: rgba(0,0,0,0.05);
+  --footer-arka-plan: #209677;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    font-family: "Poppins";
+}
+
+body{
+    height: 100vh;
+    background:var(--ana-arkaplan);
+    color: #444a57 ;
+    line-height: 1.8;
+    font-size: 1.3rem;
+    
+}
+
+/* Link, button, input, resim liste gibi temel elemanlar */
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--ana-renk);
+}
+
+button{
+    outline: 0;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+} 
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* yazılar */
+.logo-name{
+    font-size: 1.25rem;
+}
+
+.logo {
+    height: 100px; 
+    width: auto;
+    margin-left: 20px;
+}
+
+h1,h2,h3{
+    font-family: "Poppins",sans-serif;
+}
+
+
+#header{
+    border-bottom: 1px solid var(--cerceve-rengi);
+    background-color: #f4fdfa;
+}
+
+main{
+    min-height: 150vh; /* en az ekran boyu kadar yer kaplasın */
+    background-color: var(--ana-arkaplan); /* isteğe bağlı */
+}
+
+
+/* Modal temel stil*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 50;
+    left: 0; top: 0; right:0; bottom:0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}

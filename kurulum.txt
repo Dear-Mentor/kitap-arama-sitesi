@@ -1,0 +1,43 @@
+WEB TABANLI KİTAP ARAMA SİTESİ (LOOKBOOK) KURULUM REHBERİ
+-----------------------------------
+
+Bu projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları takip edin.
+
+1. Python Yükleme
+-----------------
+Eğer bilgisayarınızda Python yüklü değilse:
+- https://www.python.org/downloads/ adresinden en güncel Python sürümünü indirip kurun.
+- Kurulum sırasında "Add Python to PATH" seçeneğini işaretleyin.
+
+2. Proje Dosyalarını Hazırlama
+------------------------------
+- Size gönderilen zip dosyasını aynı dizine bir klasöre çıkartın
+  
+
+3. Gerekli Python Kütüphanelerini Kurma
+---------------------------------------
+Komut satırını (CMD, Terminal veya PowerShell) açın ve proje klasörüne gidin.
+
+Aşağıdaki komutları sırayla yazın:
+
+4. Sunucuyu Başlatma
+--------------------
+Aynı klasörde şu komutu yazın:
+
+
+5. Siteyi Görüntüleme
+---------------------
+Sunucu başarıyla başlatılırsa, şu adımları izleyerek websayfasını açın:
+
+Web-Tabanli-Kitap-Arama-Sitesi/templates/index.html
+
+
+Arama kutusuna kitap/yazar adı yazarak kitapları arayabilir, kartlara tıklayarak detay ve kitap açıklamasını görebilirsiniz.
+
+Notlar:
+- Sunucu açık olduğu sürece siteyi kullanabilirsiniz.
+- Sorun yaşarsanız ekran görüntüsü ile birlikte projenin sahibine iletebilirsiniz.
+
+BAŞARILAR!
+
+

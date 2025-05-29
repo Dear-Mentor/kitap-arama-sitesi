@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookBook</title>
+    <meta name="keyboard" content="kitap, ara, book, kitap arama, book search, library, kütüphane">
+    <meta name="description" content="LookBook | Kitap Arama Sitesi">
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+     <!-- CSS Links -->
+     <link rel="stylesheet" href="../static/style.css">
+     <link rel="stylesheet" href="../static/global.css">
+
+</head>
+<body>
+    <!-- Logo + Menü -->
+    <header id="header" class="bg-light"> 
+        <div class="container">
+            <img src="../static/images/LookBook.png" alt="LookBook" class="logo">
+            <nav id="navbar"><!-- Navigasyon (isteğe bağlı ayrı) -->
+                
+                <ul>
+                    <li><a href="#anasayfa">Anasayfa</a></li>
+                    <li><a href="#hakkinda" >Hakkında</a></li>
+                    <li><a href="#kategoriler" >Kategoriler</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+
+
+
+
+    <!-- Sayfanın asıl içeriği (arama kutusu, kitaplar vs.) -->
+    <main id="main">
+        <div class="arama-alani"> 
+            <form class="arama-formu" action="#" method="get">
+                <h2 id="slogan">Sadece Oku, Gerisini Biz Buluruz</h2> 
+                <div class="input-icon">
+                    <input type="text" id="search" placeholder="Kitap İsmi Arayın..." required >
+
+                    <button type="submit" class="icon-btn">
+                    <i id="search-icon" class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="kitap-listesi">
+        <!-- JavaScript ile sonuçlar buraya eklenecek -->
+            
+        </div>
+    </main>  
+
+
+
+    <div class="modal" id="modal">
+        <div class="modal-icerik">
+            <span class="modal-kapat">&times;</span>
+            <div id="modal-detay"></div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+    <footer id="iletisim" > <!-- İletişim bilgileri, sosyal medya linkleri -->
+        <div class="contact-form">
+            <form> <!-- Sol tarafta olacak -->
+                <h3 class="text-center"> Bize Ulaşın</h3>
+                <!-- ...form alanları... -->
+                <div class="form-group">
+                    <label for="name">İsim</label>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    name="name" 
+                    id="name" 
+                    placeholder="Adınız"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    name="email" 
+                    id="email" 
+                    placeholder="E-Mail Adresiniz"/>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesaj</label>
+                    <textarea 
+                    name="message" 
+                    id="message" 
+                    class="form-control"
+                    rows="4" 
+                    placeholder="Mesajınız.."></textarea>
+                </div>
+                <button type="submit" id="gonder-btn" class="btn">Gönder</button> 
+            </form>
+        </div>
+
+            <div class="sosyal-medya">
+                <h2 class="sm-baslik"><i class="fa-solid fa-hashtag fa-xl"></i>Sosyal Medya</h2>
+                <ul><!-- Sağ tarafta olacak -->
+                    <!-- sosyal medya linkleri burada -->
+                    <li ><a href="https://tr-tr.facebook.com/" class="facebook"><i class="fa-brands fa-facebook" id="facebook"></i>Facebook</a></li>
+                    <li ><a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-square-instagram" id="instagram"></i> Instagram</a></li>
+                    <li ><a href="https://x.com/" class="twitter"><i class="fa-brands fa-square-twitter" id="twitter"></i> Twitter</a></li>
+                    <li><a href="https://linkedin.com" class="linkedin">Linked<i class="fa-brands fa-linkedin" id="linkedin"></i></a></li>
+                </ul>
+            </div>
+        
+        <p>© 2025 LookBook. Tüm hakları saklıdır.</p>
+    </footer>
+<script src="../static/script.js"></script> 
+</body>
+</html>
+
