@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const kitapListesi = document.querySelector(".kitap-listesi");
     const aramaFormu = document.querySelector(".arama-formu");
 
-
+    
     function temizleMetin(metin) {
     if (!metin) return "-";
     let idx = metin.indexOf("http");
