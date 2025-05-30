@@ -1,5 +1,6 @@
 WEB TABANLI KİTAP ARAMA SİTESİ (LOOKBOOK)
 ------------------------------------
+Proje Sahibi: Zehra Nur Uyar
 
 Bu proje, temel kitap arama, listeleme ve detay görüntüleme özelliklerine sahip basit bir web uygulamasıdır.
 
@@ -13,15 +14,12 @@ Bu proje, temel kitap arama, listeleme ve detay görüntüleme özelliklerine sa
 
 KULLANIM
 --------
-https://lookbook-8beo.onrender.com/ domain adresinden siteye ulaşabilirsiniz
+https://lookbook-8beo.onrender.com  domain adresinden siteye ulaşabilirsiniz
 
-Dosyalardan açmak için:
 
-1. templates/index.html dosyasına tıklayarak siteyi açın.
+1. Arama kutusuna ingilizce kitap/yazar ismi yazıp arama yapabilirsiniz.
 
-2. Arama kutusuna ingilizce kitap/yazar yazıp arama yapabilirsiniz.
-
-3. Kitap kartına tıklayarak açıklama detayını görebilirsiniz.
+2. Kitap kartına tıklayarak açıklama detayını görebilirsiniz.
 
 KISACA DOSYA YAPISI
 -------------------
@@ -38,6 +36,6 @@ GELİŞTİRİCİ NOTLARI
 
 - Proje tamamen açık kaynak ve geliştirilmeye açıktır.
 
-Sorularınız ve geri bildirimleriniz için: [mentor.the.mentor@gmail.com]
+Sorularınız ve geri bildirimleriniz için: [zhrnr.yr@gmail.com]
 
 BAŞARILAR VE İYİ KULLANIMLAR!
