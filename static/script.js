@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const kitapListesi = document.querySelector(".kitap-listesi");
     const aramaFormu = document.querySelector(".arama-formu");
 
-
+    //hatalı uzun metin içeriğini temizlemek için fonksiyon:
     function temizleMetin(metin) {
     if (!metin) return "-";
     //eğer metinde hhtp veya ; varsa, ordan kırp

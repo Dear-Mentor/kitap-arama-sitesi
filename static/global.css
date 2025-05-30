@@ -76,7 +76,7 @@ img{
     display: block;
 }
 
-/* yazılar */
+/* logo- başlık- yazılar */
 .logo-name{
     font-size: 1.25rem;
 }
@@ -99,7 +99,7 @@ h1,h2,h3{
 
 main{
     min-height: 150vh; /* en az ekran boyu kadar yer kaplasın */
-    background-color: var(--ana-arkaplan); /* isteğe bağlı */
+    background-color: var(--ana-arkaplan);
 }
 
 

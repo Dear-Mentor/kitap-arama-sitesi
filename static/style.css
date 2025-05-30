@@ -87,11 +87,11 @@ header nav ul li a:hover{
 }
 
 .input-icon {
-    position: relative;         /* Önemli! */
+    position: relative;  /* Önemli! */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: fit-content;         /* Genişliği içeriğe göre ayarla, istersen sil de olur */
+    width: fit-content;   /* Genişliği içeriğe göre ayarla*/
     margin: 0 auto;
 }   
 #search{
@@ -102,7 +102,7 @@ header nav ul li a:hover{
     border: 2px solid var(--cerceve-rengi);
     border-radius: 20px;
     font-size: 18px;
-    padding: 10px 56px 10px 16px; /* Sağdan ekstra padding! */
+    padding: 10px 56px 10px 16px; 
     box-sizing: border-box;
 }
 #search:focus {
@@ -112,8 +112,8 @@ header nav ul li a:hover{
 
 
 .icon-btn{
-    position: absolute;         /* Absolute ile inputun içinde sağda */
-    right: 18px;                /* inputun sağına yasla */
+    position: absolute;  /* Absolute ile inputun içinde sağda */
+    right: 18px;   /* inputun sağına yasla */
     top: 50%;
     transform: translateY(-50%);
     background: none;
@@ -143,17 +143,17 @@ form.arama-formu {
 
 
 
-/* Kitap Sonuçları Listeleme*/
+/* Kitap Sonuçları Listeleme - Kitap Kartı Özellikleri*/
 
 .kitap-listesi{
     display: grid;
-    grid-template-columns: repeat(6, 1fr) ; /* 5 sütun olacak */
+    grid-template-columns: repeat(6, 1fr); /* 6 sütun olacak */
     margin: 2rem 0;
     margin-left: 5rem;
     margin-right: 5rem;
-    padding: 0 2vw;  /* Yandan boşluk ekle */
-    justify-content: center; /* Grid’i ortala */
-    gap: 2rem; /* Kartlar arası boşluk */
+    padding: 0 2vw;  
+    justify-content: center; 
+    gap: 2rem; 
 }
 
 .kitap-karti{
@@ -164,7 +164,7 @@ form.arama-formu {
     width: 220px;
     position:relative;
     max-width: 100%;
-    min-height: 300px;      /* Kartlar kısa kalmasın diye */
+    min-height: 300px;  
     max-height: 440px;
     overflow: hidden;
     display: flex;
@@ -186,8 +186,29 @@ form.arama-formu {
     border-radius: 7px;
     margin-bottom: 12px;
 }
+.kitap-karti h3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* hata varmış gibi gözüküyor ama hata yok aslında */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal !important;
+    max-width: 95%;
+    min-height: 4.5em;   
+    line-height: 1.13;   
+    margin-bottom: 0.6em; 
+}
 
-/* Modal için detay */
+
+.kitap-karti p {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 95%;
+    margin: 0.2em 0 0.2em 0;   
+}
+
+/* Modal Pop Up Bölümü */
 
 .modal-icerik{
     background: var(--ana-arkaplan);
@@ -214,14 +235,14 @@ form.arama-formu {
     width: 92%;
     min-width: 290px;
     max-width: 94%;
-    max-height: 82vh;            /* İçerik yüksekliği modal'a göre */
+    max-height: 82vh;     
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
     box-shadow: none;
     margin: 38px auto 32px auto;
-    padding: 38px 28px 32px 28px; /* Sağdan biraz padding */
+    padding: 38px 28px 32px 28px; 
 }
 
 .modal-kapat{
@@ -239,28 +260,6 @@ form.arama-formu {
 
 .modal-kapat:hover{
     color: var(--baslık-rengi);
-}
-
-.kitap-karti h3 {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal !important;
-    max-width: 95%;
-    min-height: 4.5em;   /* Biraz daha artır! */
-    line-height: 1.13;   /* Satır arası mesafe */
-    margin-bottom: 0.6em; /* Alt boşluk ekle */
-}
-
-
-.kitap-karti p {
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 95%;
-    margin: 0.2em 0 0.2em 0;   /* Alt/üst boşluklar */
 }
 
 
