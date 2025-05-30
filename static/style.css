@@ -241,16 +241,26 @@ form.arama-formu {
     color: var(--baslık-rengi);
 }
 
-.kitap-karti p, .kitap-karti h3 {
+.kitap-karti h3 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;    /* En fazla 3 satır */
+    -webkit-line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal !important;
-    min-height: 3.9em;  /* 3 satır kadar yer açar (1.3em * 3) */
+    min-height: 3.9em;
     max-width: 95%;
 }
+
+.kitap-karti p {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 95%;
+}
+
+
+
 
 
 
