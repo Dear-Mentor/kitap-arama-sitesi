@@ -244,6 +244,7 @@ form.arama-formu {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 220px;   /* kartının genişliğine göre ayarla */
+    max-height: 400px;
     word-break: break-word;
     
 }
