@@ -2,6 +2,12 @@ WEB TABANLI KİTAP ARAMA SİTESİ (LOOKBOOK)
 ------------------------------------
 Proje Sahibi: Zehra Nur Uyar
 
+Github linki: 
+https://github.com/Dear-Mentor/kitap-arama-sitesi.git
+
+Websitesi linki:
+https://lookbook-8beo.onrender.com
+
 Bu proje, temel kitap arama, listeleme ve detay görüntüleme özelliklerine sahip basit bir web uygulamasıdır.
 
 İÇERİK
