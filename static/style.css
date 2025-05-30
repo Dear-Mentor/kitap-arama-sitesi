@@ -240,9 +240,11 @@ form.arama-formu {
 }
 
 .kitap-karti p, .kitap-karti h3 {
-    max-height: 5em;   /* 2 satırdan fazla gösterme */
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 220px;   /* kartının genişliğine göre ayarla */
+    word-break: break-word;
     
 }
 
