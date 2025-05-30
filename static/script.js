@@ -4,6 +4,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const kitapListesi = document.querySelector(".kitap-listesi");
     const aramaFormu = document.querySelector(".arama-formu");
 
+
+    function temizleMetin(metin) {
+    if (!metin) return "-";
+    let idx = metin.indexOf("http");
+    if (idx > 0) return metin.substring(0, idx).trim();
+    idx = metin.indexOf(";");
+    if (idx > 0) return metin.substring(0, idx).trim();
+    if (metin.length > 80) return metin.substring(0, 80) + "...";
+    return metin;
+    }   
+
     // Canlı arama için keyup kısmı
     searchInput.addEventListener("keyup", function () {
         const aranan = searchInput.value.trim();
@@ -51,10 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             kitapDiv.innerHTML = `
                 <img src="${kapakUrl}" alt="Kapak" class="kitap-kapak">
-                <h3>${kitap["Book-Title"]}</h3>
-                <p><b>Yazar:</b> ${kitap["Book-Author"] || "Bilinmiyor"}</p>
-                <p><b>Yıl:</b> ${kitap["Year-Of-Publication"] || "Bilinmiyor"}</p>
+                <h3>${temizleMetin(kitap["Book-Title"])}</h3>
+                <p><b>Yazar:</b> ${temizleMetin(kitap["Book-Author"]) || "Bilinmiyor"}</p>
+                <p><b>Yıl:</b> ${temizleMetin(kitap["Year-Of-Publication"]?.toString()) || "Bilinmiyor"}</p>
             `;
+
             // kapağa/karta dokununca detay modal' ı (pop up) açma
             kitapDiv.addEventListener("click", function () {
                 kitapDetayiniGoster(kitap, kapakUrl);
