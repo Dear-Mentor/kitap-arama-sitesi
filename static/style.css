@@ -243,11 +243,11 @@ form.arama-formu {
 
 .kitap-karti p, .kitap-karti h3 {
     display: -webkit-box;
-    -webkit-line-clamp: 4;   /* En fazla 2 satır göster */
+    -webkit-line-clamp: 4;   /* En fazla 3 satır göster */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: normal !important; /* nowrap yerine normal */
+    white-space: normal !important; 
     min-height: 3.5rem;
     max-width: 95%;
 }
