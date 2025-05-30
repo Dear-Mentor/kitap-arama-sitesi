@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // satır atlaması varsa ilk satırı al
     metin = metin.split('\n')[0];
     // Çok uzunsa kısalt
-    if (metin.length > 80) return metin.substring(0, 80) + "...";
+    if (metin.length > 120) return metin.substring(0, 80) + "...";
     return metin;
     }   
 
