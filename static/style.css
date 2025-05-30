@@ -164,8 +164,8 @@ form.arama-formu {
     width: 220px;
     position:relative;
     max-width: 100%;
-    min-height: 290px;      /* Kartlar kısa kalmasın diye */
-    max-height: 420px;
+    min-height: 300px;      /* Kartlar kısa kalmasın diye */
+    max-height: 440px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
