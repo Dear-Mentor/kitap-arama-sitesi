@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (idx >= 0) return metin.substring(0, idx).trim();
     idx = metin.indexOf(";");
     if (idx >= 0) return metin.substring(0, idx).trim();
+    // satır atlaması varsa ilk satırı al
+    metin = metin.split('\n')[0];
     // Çok uzunsa kısalt
     if (metin.length > 80) return metin.substring(0, 80) + "...";
     return metin;

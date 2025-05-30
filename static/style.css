@@ -165,6 +165,8 @@ form.arama-formu {
     position:relative;
     max-width: 100%;
     min-height: 290px;      /* Kartlar kısa kalmasın diye */
+    max-height: 390px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,12 +242,13 @@ form.arama-formu {
 }
 
 .kitap-karti p, .kitap-karti h3 {
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* En fazla 2 satır göster */
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 90%;   /* kartının genişliğine göre ayarla */
-    word-break: break-word;
-    display: block;
+    white-space: normal !important; /* nowrap yerine normal */
+    max-width: 95%;
     
 }
 
