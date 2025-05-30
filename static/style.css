@@ -250,8 +250,8 @@ form.arama-formu {
     white-space: normal !important;
     max-width: 95%;
     min-height: 4.5em;   /* Biraz daha artır! */
-    line-height: 1.10;   /* Satır arası mesafe */
-    margin-bottom: 0.6em; /* Alt boşluk ekle */
+    line-height: 1.13;   /* Satır arası mesafe */
+    margin-bottom: 0.5em; /* Alt boşluk ekle */
 }
 
 
