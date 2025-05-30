@@ -248,7 +248,7 @@ form.arama-formu {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal !important;
-    min-height: 4em;
+    min-height: 4.2em;
     max-width: 95%;
 }
 
