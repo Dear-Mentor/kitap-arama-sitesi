@@ -240,11 +240,12 @@ form.arama-formu {
 }
 
 .kitap-karti p, .kitap-karti h3 {
-    white-space: normal;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 220px;   /* kartının genişliğine göre ayarla */
+    max-width: 90%;   /* kartının genişliğine göre ayarla */
     word-break: break-word;
+    display: block;
     
 }
 

@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!metin) return "-";
     //eğer metinde hhtp veya ; varsa, ordan kırp
     let idx = metin.indexOf("http");
-    if (idx > 0) return metin.substring(0, idx).trim();
+    if (idx >= 0) return metin.substring(0, idx).trim();
     idx = metin.indexOf(";");
-    if (idx > 0) return metin.substring(0, idx).trim();
+    if (idx >= 0) return metin.substring(0, idx).trim();
     // Çok uzunsa kısalt
     if (metin.length > 80) return metin.substring(0, 80) + "...";
     return metin;
