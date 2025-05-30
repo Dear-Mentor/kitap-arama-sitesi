@@ -391,6 +391,10 @@ footer{
     margin-top: 3px;
     justify-content: center;
 }
+#message {
+    resize: none;
+}
+
 
 footer a i {
     margin-right: 9px;
