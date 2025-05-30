@@ -249,8 +249,8 @@ form.arama-formu {
     text-overflow: ellipsis;
     white-space: normal !important;
     max-width: 95%;
-    min-height: 4.4em;   /* Biraz daha artır! */
-    line-height: 1.15;   /* Satır arası mesafe */
+    min-height: 4.5em;   /* Biraz daha artır! */
+    line-height: 1.10;   /* Satır arası mesafe */
     margin-bottom: 0.6em; /* Alt boşluk ekle */
 }
 
@@ -331,7 +331,7 @@ footer{
     font-size: 1em;
     outline: none;
     margin-bottom: 0.2em;
-    background: var(#fff);
+    background: #fff;
 }
 
 .form-group input:focus,
